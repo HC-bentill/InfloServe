@@ -136,20 +136,35 @@ include('includes/nav.php');
         <img src="img/img1.jpg" class="img-fluid" alt="">
       </div>
      <div class="item">
-        <img src="img/img1.jpg" class="img-fluid" alt="">
+        <img src="img/img2.jpg" class="img-fluid" alt="">
       </div>
       <div class="item">
-        <img src="img/img1.jpg" class="img-fluid" alt="">
+        <img src="img/img3.jpg" class="img-fluid" alt="">
       </div>
       <div class="item">
-        <img src="img/img1.jpg" class="img-fluid" alt="">
+        <img src="img/img18.jpg" class="img-fluid" alt="">
       </div>
       <div class="item">
-        <img src="img/img1.jpg" class="img-fluid" alt="">
+        <img src="img/img5.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="item">
+        <img src="img/img6.jpg" class="img-fluid" alt="">
       </div>
       
     </div>
   </div>
+
+  <!-- owl carousel -->
+  <section class="owl-carousel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of carousel -->
 
 
   <!-- start of Hero -->
