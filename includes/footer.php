@@ -59,29 +59,42 @@
 <!-- start of carousel -->
 <script src="owlcarousel/OwlCarousel2-2.3.4/dist/owl.carousel.js" type="text/javascript"></script>
 <script>
-  $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
-      loop: false,
-      nav: true,
-      margin: 10,
-      navText: [
-        '<i class="fa fa-chevron-left" id="chev_left"></i>',
-        '<i class="fa fa-chevron-right" id="chev_right"></i>',
-      ],
-      responsive: {
-        0: {
-          items: 1,
+       var owl = $('.owl-carousel');
+owl.owlCarousel({
+		   responsive:({
+        0:{
+            items:1,
+            nav:true,
+			loop:true
         },
-        600: {
-          items: 3,
+        600:{
+            items:2,
+            nav:true,
+			loop:true
         },
-        1000: {
-          items: 4,
-        },
-      },
-    });
-  });
-</script>
+        1000:{
+            items:4,
+            nav:true,
+            loop:true
+        }}),
+    
+    loop:true,
+	animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    stagePadding:30,
+    smartSpeed:450,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+    </script>
 <!-- end of carousel -->
 
 <script>
