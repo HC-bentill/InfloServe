@@ -26,11 +26,21 @@ include('includes/nav.php');
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Tables</a>
             <a class="dropdown-item" href="#">Canopies</a>
-            <a class="dropdown-item" href="#">Lights</a>
-            <a class="dropdown-item" href="#">Smoke</a>
-            <a class="dropdown-item" href="#">Sound System</a>
-            <a class="dropdown-item" href="#">Linen</a>
-            <a class="dropdown-item" href="#">Flowers</a>
+            <a class="dropdown-item" href="#">Table cloths </a>
+            <a class="dropdown-item" href="#">Table napkins</a>
+            <a class="dropdown-item" href="#">Table runners</a>
+            <a class="dropdown-item" href="#">Champagne wall</a>
+            <a class="dropdown-item" href="#">Wine wall</a>
+            <a class="dropdown-item" href="#">Backdrops</a>
+            <a class="dropdown-item" href="#">Plates </a>
+            <a class="dropdown-item" href="#">Under plates</a>
+            <a class="dropdown-item" href="#">Forks/spoons/ knife set </a>
+            <a class="dropdown-item" href="#">Flower vase </a>
+            <a class="dropdown-item" href="#">Lighting </a>
+            <a class="dropdown-item" href="#">Fireworks </a>
+            <a class="dropdown-item" href="#">Green grass carpet</a>
+            <a class="dropdown-item" href="#">Red carpet </a>
+            <a class="dropdown-item" href="#">Aisle runners</a>
           </div>
         </div>
       </div>
