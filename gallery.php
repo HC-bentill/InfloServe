@@ -22,61 +22,61 @@ include('includes/nav.php');
   <div class="container">
     <div class="roww">
       <div class="column">
-      <a href="img/img1.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img1.jpg"/>
+      <a href="img/img44.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img44.jpg"/>
       </a> 
-      <a href="img/img2.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img2.jpg"/>
+      <a href="img/img45.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img45.jpg"/>
       </a>
-      <a href="img/img3.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img3.jpg"/> 
+      <a href="img/img46.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img46.jpg"/> 
       </a>
-      <a href="img/img7.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img7.jpg"/>
+      <a href="img/img47.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img47.jpg"/>
       </a>
-      <a href="img/img5.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img5.jpg"/>
-      </a>
-      </div>
-      <div class="column">
-      <a href="img/img25.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img25.jpg"/>
-      </a>
-        <a href="img/img15.jpg" data-lightbox="mygallery" data-title="" >  
-        <img src="img/img15.jpg"/> 
-      </a>
-
-      <a href="img/img17.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img17.jpg"/>
-      </a>
-
-      <a href="img/img6.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img6.jpg"/>
-      </a>
-
-      <a href="img/img9.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img9.jpg"/>
+      <a href="img/img48.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img49.jpg"/>
       </a>
       </div>
       <div class="column">
-      <a href="img/img1.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img1.jpg"/>
+      <a href="img/img49.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img49.jpg"/>
+      </a>
+        <a href="img/img50.jpg" data-lightbox="mygallery" data-title="" >  
+        <img src="img/img50.jpg"/> 
+      </a>
+
+      <a href="img/img51.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img51.jpg"/>
+      </a>
+
+      <a href="img/img48.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img48.jpg"/>
+      </a>
+
+      <a href="img/img46.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img46.jpg"/>
+      </a>
+      </div>
+      <div class="column">
+      <a href="img/img44.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img44.jpg"/>
       </a>
         
-      <a href="img/img2.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img2.jpg"/>
+      <a href="img/img50.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img50.jpg"/>
       </a>
 
-      <a href="img/img5.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img3.jpg"/>
+      <a href="img/img51.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img51.jpg"/>
       </a>
 
-      <a href="img/img13.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img13.jpg"/>
+      <a href="img/img45.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img45.jpg"/>
       </a>
 
-      <a href="img/img5.jpg" data-lightbox="mygallery" data-title="" >
-        <img src="img/img5.jpg"/>
+      <a href="img/img48.jpg" data-lightbox="mygallery" data-title="" >
+        <img src="img/img48.jpg"/>
       </a>
       </div>
     <nav aria-label="Page navigation example">
