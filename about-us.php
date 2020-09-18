@@ -26,21 +26,13 @@ include('includes/nav.php');
         <div class="row about-text">
           <div class="col-md-12 mb-5">
           <h1 class="font w3-animate-left">Who We Are </h1><hr>
-            <p>You can’t host a successful event without the guidance and expertise of an experienced event planner. A professional event planner has the foresight to
-               foreseen any roadblock before and after your event; wedding, birthday, conference, family gathering among others.If you want to plan a beautiful event that will make headlines, then prioritise the experts on this list. 
-                  beneficiaries lack the basic needs of food, clothes, shoes and shelter. Ghifted aims 
-                   provide these resources to students in exchange for their dedication to learning
-                    relevant life and career skills. <br><br> Consequently, students will display their best
-                     works in exhibitions at the school's gallery – The Ghifted Gallery of Fine Art
-                      (A world-class African art gallery), which will be built in Aburi, Ghana.
-                       This space will allow students to access a wider arts community, showcase their skills,
-                        advertise their services, and gain private clients.  . </p>
+            <p>We are a rental and event planning company located at Westlands, Accra, Ghana. </p>
           </div>
         </div>
 <hr>      
         <div class="row about-text about-img mt-5 pt-5 g-3">
           <div class="col-md-6 col-sm-12">
-            <br><br> <strong>Our Vision  :</strong>  vroadblock before and after your event; wedding, birthday, conference, family gathering among others.If you want to plan a beautiful event that will make headlines, then prioritise the experts on this list. 
+            <br><br> <strong>Our Vision  :</strong>  Before and after your event; wedding, birthday, conference, family gathering among others.If you want to plan a beautiful event that will make headlines, then prioritise the experts on this list. 
                   beneficiaries lack the 
             <br><br> <strong>Our Values  :</strong> not simply a concept. It’s how we develop and maintain customer loyalty.
             Innovation – it is the driving force behind 
@@ -50,12 +42,12 @@ include('includes/nav.php');
              </p>
         </div>
         <div class="col-md-6">
-            <img class="img-fluid" src="img/img25.jpg" alt=""/>
+            <img class="img-fluid" src="img/img40.jpg" alt=""/>
         </div> 
           <div class="mt-3">
             <p>Social Media Platforms</p>
-          <a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-instagram"></a><a href="#" class="fa fa-whatsapp"></a>
+          <a href="https://www.facebook.com/Infloservevents/" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/Infloservevents/" class="fa fa-instagram"></a><a href="#" class="fa fa-whatsapp"></a>
        </div>
     </div>
     </section>
@@ -80,7 +72,7 @@ include('includes/nav.php');
     </div>
     <div class="col-md-6 founders-img">
       <div class="text-center">
-        <img class="img-fluid" src="img/avatar2.jfif" alt="" /></div>
+        <img class="img-fluid" src="img/img52.jpg" alt="" /></div>
       </div>
       
   </div>
