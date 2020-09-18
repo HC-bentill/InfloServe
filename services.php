@@ -22,67 +22,54 @@ include('includes/nav.php');
 <section class="event-planning">
   <div class="container">
     <div class="row event-planning-content text-center">
-      <div class="col-md-10 white-opacity">
-        <h1>We offer Reliable Services</h1>
-          <a
-            class="btn accordion-btn"
-            data-toggle="collapse"
-            href="#multiCollapseExample1"
-            role="button"
-            aria-expanded="false"
-            aria-controls="multiCollapseExample1"
-            >Consultancy</a
-          >
-          <button
-            class="btn accordion-btn"
-            type="button"
-            data-toggle="collapse"
-            data-target="#multiCollapseExample2"
-            aria-expanded="false"
-            aria-controls="multiCollapseExample2"
-          >
-            Ushering
-          </button>
-           <button
-            class="btn accordion-btn"
-            type="button"
-            data-toggle="collapse"
-            data-target="#multiCollapseExample3"
-            aria-expanded="false"
-            aria-controls="multiCollapseExample3"
-          >
-            Event Planning
-          </button>
-
-        </p>
+      <div class="col-md-12 white-opacity">
+        <button
+          class="btn accordion-btn"
+          type="button"
+          data-toggle="collapse"
+          data-target="#multiCollapseExample2"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample2"
+        >
+          Click to View Our Services
+        </button>
         <div class="row">
-          <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. Nihil anim keffiyeh
-                helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                ea proident.
-              </div>
-            </div>
-          </div>
           <div class="col">
             <div class="collapse multi-collapse" id="multiCollapseExample2">
               <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. Nihil anim keffiyeh
-                helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                ea proident.
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample3">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. Nihil anim keffiyeh
-                helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                ea proident.
+                <ul class="w3-ul w3-card-4">
+                  <li class="w3-bar">
+                    <div class="w3-bar-item">
+                      <span class="w3-large">Party rentals</span><br />
+                    </div>
+                  </li>
+                  <li class="w3-bar">
+                    <div class="w3-bar-item">
+                      <span class="w3-large">Event planning </span><br />
+                    </div>
+                  </li>
+
+                  <li class="w3-bar">
+                    <div class="w3-bar-item">
+                      <span class="w3-large">Event setups</span><br />
+                    </div>
+                  </li>
+                  <li class="w3-bar">
+                    <div class="w3-bar-item">
+                      <span class="w3-large">Garden weddings</span><br />
+                    </div>
+                  </li>
+                  <li class="w3-bar">
+                    <div class="w3-bar-item">
+                      <span class="w3-large">Church weddings</span><br />
+                    </div>
+                  </li>
+                  <li class="w3-bar">
+                    <div class="w3-bar-item">
+                      <span class="w3-large">Corporate events etc.</span><br />
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
