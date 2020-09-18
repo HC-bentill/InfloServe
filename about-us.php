@@ -26,7 +26,13 @@ include('includes/nav.php');
         <div class="row about-text">
           <div class="col-md-12 mb-5">
           <h1 class="font w3-animate-left">Who We Are </h1><hr>
-            <p>We are a rental and event planning company located at Westlands, Accra, Ghana. </p>
+            <p>We are a rental and event planning company located at Westlands, Accra, Ghana. <br>
+              Call these numbers :  <br>
+             <strong> +233302547500 | +233508636126 | +233244179985</strong> All items are also available for rental.
+
+Call us!!!
+
+            </p>
           </div>
         </div>
 <hr>      
