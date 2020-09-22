@@ -1,0 +1,105 @@
+
+/* ------------------------------------------------------ */
+/* PORTFOLIO FILTER */
+/* ------------------------------------------------------ */
+
+.portfoliofilter {
+	position:relative;
+	float: left;  
+	width: 100%;
+	list-style-type: none; 
+	margin-top:5px !important;
+}
+
+.portfoliofilter li { 
+	position:relative;
+	float: left; 
+	}
+
+.portfoliobutton {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 20px 0 20px;
+	margin:0 auto;
+}
+
+.portfoliobutton:link, .portfoliobutton:visited, .portfoliobutton:hover, .portfoliobutton_noselect:hover {
+	color: #FFFFFF !important;
+	background: #FF0000;
+	text-shadow: 1px 1px 0px #000;
+	border: 1px solid #FFF;
+	text-decoration: none;
+}
+
+.portfoliobutton_noselect {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.portfoliobutton_noselect:link, .portfoliobutton_noselect:visited {
+	color: #ffffff;
+	padding: 0 20px 0 20px;
+	text-align: center;
+	border: 1px solid #cccccc;
+	text-decoration: none;
+}
+
+/* ------------------------------------------------------ */
+/* 3-COLUMN PORTFOLIO */
+/* ------------------------------------------------------ */
+#portfoliolist3column {
+	float: left; 
+	width: 100%;
+}
+
+.portfolio {
+	float: left;
+	position: relative;
+	margin:0px 0px 0px 0px !important;
+	padding:0px !important;
+}
+
+
+li.portfolio{
+	list-style-type: none;
+}
+.portfolio .blogimage {
+	float: left;
+	margin:0 auto;
+	padding:0px !important;
+}
+
+ul#portfoliolist3column {
+	float:left;
+	margin: 0px 0px 0px 20px !important;
+	padding:0px !important;
+}
+ul#portfoliolist3column li {
+	margin:0px 0px 0px 0px !important;
+	padding:0px !important;
+}
+
+.gallery_img img{
+	padding:0px;
+	margin:0 auto;
+}
+
+a.gallery_img:link,
+a.gallery_img:visited,
+a.gallery_img:active,
+a.gallery_img:hover,
+a.gallery_img{
+	position:relative;
+	border:1px solid #ddd !important;
+	float:left;
+	background:#FFF;
+	text-decoration:none;
+	padding-bottom:4px;
+	padding-top:5px;	
+	padding-left:5px;
+	padding-right:5px;
+	margin:-2px 20px 10px 0px !important;
+	
+}

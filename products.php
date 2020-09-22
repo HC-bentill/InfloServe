@@ -1,9 +1,34 @@
-<?php require('includes/page-head.php');
+<?php 
+require('includes/page-head.php');
+include('connect.php');
+
+
+//pagination
+$showRecordPerPage = 20;
+if(isset($_GET['page']) && !empty($_GET['page'])){
+$currentPage = $_GET['page'];
+}else{
+$currentPage = 1;
+}
+$startFrom = ($currentPage * $showRecordPerPage) - $showRecordPerPage;
+$totalEmpSQL = "SELECT * FROM posts WHERE post_cat !=24 AND deleted=0 ";
+$allEmpResult = mysqli_query($con, $totalEmpSQL);
+$totalEmployee = mysqli_num_rows($allEmpResult);
+$lastPage = ceil($totalEmployee/$showRecordPerPage);
+$firstPage = 1;
+$nextPage = $currentPage + 1;
+$previousPage = $currentPage - 1;
+
+
+
+$productsql ="SELECT * FROM posts WHERE post_cat !=24 AND deleted=0 ORDER BY post_id DESC LIMIT $startFrom, $showRecordPerPage";
+$productresult = mysqli_query($con, $productsql);
 
 ?>
 
 <?php 
 include('includes/nav.php');
+include('connect.php');
 ?>
 
 <!-- start of Hero -->
@@ -12,37 +37,9 @@ include('includes/nav.php');
     <div class="row rentals-banner-text">
       <div class="col-md-12">
         <h1 class="w3-animate-left">Rentals</h1>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle w3-animate-right"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Categrories
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Tables</a>
-            <a class="dropdown-item" href="#">Canopies</a>
-            <a class="dropdown-item" href="#">Table cloths </a>
-            <a class="dropdown-item" href="#">Table napkins</a>
-            <a class="dropdown-item" href="#">Table runners</a>
-            <a class="dropdown-item" href="#">Champagne wall</a>
-            <a class="dropdown-item" href="#">Wine wall</a>
-            <a class="dropdown-item" href="#">Backdrops</a>
-            <a class="dropdown-item" href="#">Plates </a>
-            <a class="dropdown-item" href="#">Under plates</a>
-            <a class="dropdown-item" href="#">Forks/spoons/ knife set </a>
-            <a class="dropdown-item" href="#">Flower vase </a>
-            <a class="dropdown-item" href="#">Lighting </a>
-            <a class="dropdown-item" href="#">Fireworks </a>
-            <a class="dropdown-item" href="#">Green grass carpet</a>
-            <a class="dropdown-item" href="#">Red carpet </a>
-            <a class="dropdown-item" href="#">Aisle runners</a>
-          </div>
-        </div>
+<?php
+include('includes/cat_dropdown.php');
+?>
       </div>
     </div>
   </div>
@@ -52,77 +49,53 @@ include('includes/nav.php');
 <section class="rental-section">
   <div class="container">
     <div class="row rentals text-center">
-      <div class="col-lg-4">
-        <img src="img/img34.jpg" class="img-fluid blog-img w3-animate-left" />
+<?php while($posts = mysqli_fetch_assoc($productresult)) : ?>
+      <div class="col-lg-3 col-xs-12">
+        <a href="images/uploads/<?=$posts['description_image']; ?>" data-lightbox="mygallery" data-title="" >
+        <img src="images/uploads/<?=$posts['description_image']; ?>" class="img-fluid blog-img w3-animate-left" />
+        </a>
         <!-- <svg class="bd-placeholder-img rounded-circle" src="img/ama.png" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-        <h3 class="w3-animate-top">Canopies</h3>
-        <p class="text-left w3-animate-right" style="color: grey">
+        <h3 class="w3-animate-top"><?=$posts['title']; ?></h3>
+        <!--<p class="text-left w3-animate-right" style="color: grey">
           InfloServ Rentals has a tent size to fit your event. Wether it is a
           sit down dinner, cocktail party or backyard birthday gathering we have
           what you need.
-        </p>
+        </p>-->
       </div>
-      <div class="col-lg-4">
-        <img src="img/img35.jpg" class="img-fluid blog-img w3-animate-left" />
-        <h3 class="w3-animate-top">Chairs</h3>
-        <p class="text-left w3-animate-right" style="color: grey">
-          From traditional brown or white folding chairs to high end white
-          padded and chiavari chairs we do it all. Let us know what you're
-          looking for.
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <img src="img/img36.jpg" class="img-fluid blog-img w3-animate-left" />
-        <h3 class="w3-animate-top">Tables</h3>
-        <p class="text-left w3-animate-right" style="color: grey">
-          We have the a huge inventory of round, long, high cocktail or
-          specialty tables for your event. Mix and match to make the perfect
-          event layout.
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <img src="img/img37.jpg" class="img-fluid blog-img w3-animate-left" />
-        <h3 class="w3-animate-top">Flowers</h3>
-        <p class="text-left w3-animate-right" style="color: grey">
-          We have the a huge inventory of round, long, high cocktail or
-          specialty tables for your event. Mix and match to make the perfect
-          event layout.
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <img src="img/img38.jfif" class="img-fluid blog-img w3-animate-left" />
-        <h3 class="w3-animate-top">Linen</h3>
-        <p class="text-left w3-animate-right" style="color: grey">
-          We stock tons of linen tablecloths and napkins in various colors and
-          sizes. Whatever the color palette is for your event we've got it..
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <img src="img/img43.jpg" class="img-fluid blog-img w3-animate-left" />
-        <h3 class="w3-animate-top">Sound Equipment</h3>
-        <p class="text-left w3-animate-right" style="color: grey">
-          We stock tons of linen tablecloths and napkins in various colors and
-          sizes. Whatever the color palette is for your event we've got it..
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <img src="img/img44.webp" class="img-fluid blog-img w3-animate-left" />
-        <h3 class="w3-animate-top">Lights</h3>
-        <p class="text-left w3-animate-right" style="color: grey">
-          We stock tons of linen tablecloths and napkins in various colors and
-          sizes. Whatever the color palette is for your event we've got it..
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <img src="img/img39.jpg" class="img-fluid blog-img w3-animate-left" />
-        <h3 class="w3-animate-top">Cooler</h3>
-        <p class="text-left w3-animate-right" style="color: grey">
-          We have the a huge inventory of round, long, high cocktail or
-          specialty tables for your event. Mix and match to make the perfect
-          event layout.
-        </p>
-      </div>
+<?php endwhile;?>
     </div>
+
+
+<div class="row">
+     	<div class="col-lg-12">
+
+<nav aria-label="Page navigation example" style="margin-top:50px;">
+  <ul class="pagination" id="paginate">
+<?php if($currentPage != $firstPage) { ?>
+<li class="page-item">
+<a class="page-link" href="?page=<?php echo $firstPage ?>" tabindex="-1" aria-label="Previous">
+<span aria-hidden="true">First</span>
+</a>
+</li>
+<?php } ?>
+<?php if($currentPage >= 2) { ?>
+<li class="page-item"><a class="page-link" href="?page=<?php echo $previousPage ?>"><?php echo $previousPage ?></a></li>
+<?php } ?>
+<li class="page-item active"><a class="page-link" href="?page=<?php echo $currentPage ?>"><?php echo $currentPage ?></a></li>
+<?php if($currentPage != $lastPage) { ?>
+<li class="page-item"><a class="page-link" href="?page=<?php echo $nextPage ?>"><?php echo $nextPage ?></a></li>
+<li class="page-item">
+<a class="page-link" href="?page=<?php echo $lastPage ?>" aria-label="Next">
+<span aria-hidden="true">Last</span>
+</a>
+</li>
+<?php } ?>
+</ul>
+</nav>
+
+		</div>
+    </div><!-- end of row-->
+
   </div>
 </section>
 

@@ -1,5 +1,9 @@
 <?php 
 include('includes/page-head.php');
+include('connect.php');
+
+$carouselSql ="SELECT * FROM posts WHERE post_cat = 24 AND deleted = 0 ORDER BY post_id DESC LIMIT 10";
+$carouselresult = $con->query($carouselSql);
 ?>
 
 <?php 
@@ -17,7 +21,7 @@ include('includes/nav.php');
           <h3 id="maintext" class="w3-animate-zoom">
              Glamour • <strong style="color:#abce4a">Style</strong> • Elegance
           </h3>
-          <a href="products.php" >
+          <a href="about-us.php" >
             <button id="know-more"  type="button" class="btn w3-animate-right">
              KNOW MORE
           </button>
@@ -71,19 +75,17 @@ include('includes/nav.php');
            Events Planning & Rentals
           </h1>
           <div id="underline" ></div> <br>
-          <p>Looking for a wedding planner?</p> <br>
-          <p>A wedding is the most intimate moment you will ever
+          <p>Looking for a event planner?</p> <br>
+          <p>An event is one of the most intimate moment you will ever
              share with those who are the closest to you. I would love to help you create a 
              unique concept which will suit you both, and sweep you off your feet</p>
           <h1 class="w3-animate-zoom">Consultancy</h1>
           <div id="underline" ></div> <br>
-          <p>Looking for a wedding planner?</p> <br>
-          <p> As a newbie in the wedding industry, I was really looking forward to organize my very own first
-             styled shoot. Together with my talented friend and photographer Elisabeth we created this amazing concept 
-             which came to ! Enjoy!</p>
-              <a href="services.php" >
+          <p>We Deliver Reliable Services on Time</p> 
+          <p> Our Products and Services are well packaged, neat and delivered on time. Visit our Gallery !  </p>
+              <a href="gallery.php" >
             <button id="event-know-more"  type="button" class="btn">
-             KNOW MORE
+             View Gallery
           </button>          
           </a> 
 
@@ -99,7 +101,7 @@ include('includes/nav.php');
         <div class="img-container mt-4" >
             <img src="img/img24.png" alt="Avatar" class="img-fluid">
             <div class="overlay">
-             <div class="text">Decor and Equipments</div>
+             <div class="text">Decor and Equipment</div>
             </div>          
         </div>
         <div class="img-container mt-4" >
@@ -138,12 +140,12 @@ include('includes/nav.php');
        <h1>Why Choose Us ? </h1>
         <div class="row about-text about-img pt-2 g-3">
           <div class="col-md-6 col-sm-12">
-            <br><br> <strong>Our Vision  :</strong>  Before and after your event; wedding, birthday, conference, family gathering among others.If you want to plan a beautiful event that will make headlines, then prioritise the experts on this list. 
-                  beneficiaries lack the 
-            <br><br> <strong>Our Values  :</strong> not simply a concept. It’s how we develop and maintain customer loyalty.
-            Innovation – it is the driving force behind 
-            <br><br> <strong>Our Passion  :</strong> to access a wider arts community, showcase their skills,
-                        advertise their services, and gain private 
+            <br><br> <strong>Our Vision  :</strong>  Before and after your event; wedding, birthday, conference, family gathering among others.
+            If you want to plan a beautiful event that will make headlines, then prioritise the experts on this list. 
+             
+            <br><br> <strong>Our Values  :</strong> Not simply a concept. It’s how we develop and maintain customer loyalty.
+            Innovation – it is the driving force behind us
+            <br><br> <strong>Our Passion  :</strong>To deiver reliable services and ensure trust with our clients
             
              </p>
         </div>
@@ -153,59 +155,11 @@ include('includes/nav.php');
           <div class="mt-3">
             <p>Social Media Platforms</p>
           <a href="https://www.facebook.com/Infloservevents/" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a>
-          <a href="https://www.instagram.com/Infloservevents/" class="fa fa-instagram"></a><a href="#" class="fa fa-whatsapp"></a>
+          <a href="https://www.instagram.com/Infloservevents/" class="fa fa-instagram"></a> 
        </div>
       
     </div>
     </section>
-
-
-  <div class="carousel">
-    <div class="row text-center">
-      <div class="container">
-      <div class="col-md-12">
-      <div class="owl-carousel owl-theme">
-      <div class="item">
-        <img src="img/img44.webp" class="img-fluid" alt="">
-      
-      </div>
-     <div class="item">
-        <img src="img/img45.jpg" class="img-fluid" alt="">
-     
-      </div>
-      <div class="item">
-        <img src="img/img46.jpg" class="img-fluid" alt="">
-              </div>
-      <div class="item">
-        <img src="img/img47.jpg" class="img-fluid" alt="">
-      
-      </div>
-      <div class="item">
-        <img src="img/img48.jpg" class="img-fluid" alt="">
-      
-      </div>
-      <div class="item">
-        <img src="img/img49.jpg" class="img-fluid" alt="">
-      </div>
-      <div class="item">
-        <img src="img/img50.jpg" class="img-fluid" alt="">
-       
-      </div>
-      <div class="item">
-        <img src="img/img51.jpg" class="img-fluid" alt=""> 
-      </div>
-      
-    </div>
-
-      </div>
-      </div>
-    
-    </div>
-  </div>
-
-  <hr>
-
-
 
 
     <section class="second-parallax img-fluid">
@@ -215,25 +169,48 @@ include('includes/nav.php');
             <div class="text-center"> 
               <h1 class="font animate__bounce" style="font-size:65px">Planning Your Big day</h1>
               <div id="underline" class="w3-animate-zoom"></div>
-              <p>Identifying a list of tangible and intangible goals for your event can give you a better sense of your 
-                event management needs. Your tangible goals may be to attract 500 attendees, sell 100 products at the event, or raise
-                 $1 million for charity. Your intangible goals will help drive these tangible goals and may include raising awareness
-                 about a product or cause, or recruiting volunteers.” </p>
+              <p> Joy to the agenda. We delight in the details of your big day so you can sip, socialize and soak up every second from planning process to processional. Our collaborative approach helps couples create exceptional experiences that are flawless, effortless and tailored to their vision. </p>
             </div>
             <a href="products.php" >
             <button id="know-more"  type="button" class="btn w3-animate-right">
-             KNOW MORE
+            BROWSE PRODUCTS
           </button>
           </a>
 
           </div>
         </div>
       </div>
-
     </section>
-    
     <!-- end of Hero -->
+    
+<div class="container">
+	<div class="row" style="padding-top:80px; padding-bottom:60px;">	
+		<div class="col-lg-12">
 
+<div class="carousel">
+    <div class="row text-center">
+      <div class="container">
+      <div class="col-md-12">
+      <div class="owl-carousel owl-theme">
+      <?php while($posts = mysqli_fetch_assoc($carouselresult)) : ?> 
+      <div class="item">
+        <img src="images/uploads/<?=$posts['description_image']; ?>" class="img-fluid" alt="">
+      </div>
+      <?php endwhile; ?>
+    </div>
+
+      </div>
+      </div>
+    
+    </div>
+  </div>
+
+        
+        </div>
+    </div><!-- end of row-->
+</div><!-- end of container-->    
+    
+  
       <!-- start of Hero -->
   <section class="home-parallax img-fluid">
       <div class="container">
@@ -268,7 +245,7 @@ include('includes/nav.php');
             <img class="rounded-circle" src="img/img52.jpg" alt="Generic placeholder image" width="120" height="120">
             <h2>Ivy Sedzifa</h2>
             <h5>Businesswoman</h5>
-            <p>I was very much impressed with my birthday event beside the touch of class and colourful presentation smmodo cursus magna.</p>
+            <p>I was very much impressed with my birthday event beside the touch of class and colourful presentation.</p>
            
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
@@ -363,11 +340,11 @@ include('includes/nav.php');
     </div>
       <div class="row text-center">
         <div class="col-md-2"><img src="img/company1.jpg" alt="" class="img-fluid" /></div>
-        <div class="col-md-2"><img src="img/company2.jpeg" alt="" class="img-fluid" /></div>
-        <div class="col-md-2"><img src="img/company3.jfif" alt="" class="img-fluid" /></div>
-        <div class="col-md-2"><img src="img/company4.jfif" alt="" class="img-fluid" /></div>
+        <div class="col-md-2"><img src="img/company10.jpg" alt="" class="img-fluid" /></div>
         <div class="col-md-2"><img src="img/company5.png" alt="" class="img-fluid" /></div>
-        <div class="col-md-2"><img src="img/company6.jfif." alt="" class="img-fluid" /></div>
+        <div class="col-md-2"><img src="img/company7.jpg" alt="" class="img-fluid" /></div>
+        <div class="col-md-2"><img src="img/company8.jpg" alt="" class="img-fluid" /></div>
+        <div class="col-md-2"><img src="img/company9.jpg." alt="" class="img-fluid" /></div>
 
       </div>
     </div>

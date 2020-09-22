@@ -22,23 +22,23 @@ include('includes/nav.php');
   <div class="container">
     <div class="row contact">
       <div class="col-md-6">
-        <form>
+        <form method="post" action="mail.php" >
           <h3 class="font">Leave A Comment</h3>
           <p> We Will call back later and answer your questions.</p>
           <div class="form-group">
             <label for="exampleFormControlInput1">Your Name</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
+            <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email">
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email">
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Your message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your Message"
+            <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Your Message"
               rows="5"></textarea>
           </div>
-          <a href="exhibition.php" class="btn" id="comment_btn">Send Message</a>
+          <button type="submit" id="comment_btn">Send Message</button>
         </form>
       </div>
 

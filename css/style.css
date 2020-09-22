@@ -161,10 +161,10 @@ ul {
 
 #know-more {
   font-weight: bolder;
-  padding: 7px;
+  padding: 9px;
   text-align: center;
   border-radius: 7px;
-  width: 140px;
+  /* width: 140px; */
   background-color: #abce4a;
   color: white;
   margin-bottom: 10px;
@@ -315,7 +315,7 @@ a#hov_btn:hover {
 .carousel .owl-carousel .owl-item img {
   display: block;
   width: 100%;
-  max-height: 250px;
+  max-height: 290px;
 }
 
 #project_title {
@@ -430,9 +430,10 @@ a#hov_btn:hover {
 
 .second-parallax {
   background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.486)),
-    url("../img/img26.jpg");
-  height: 600px;
-  padding-top: 100px;
+    url(../img/img26.jpg);
+  /* height: 600px; */
+  padding: 100px;
+  text-align: center;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -593,6 +594,24 @@ a#hov_btn:hover {
 .gallery-banner .gallery-banner-text p {
   font-size: 16px;
   text-shadow: 2px 2px 2px black;
+}
+
+.gallery img {
+  max-width: auto;
+  max-height: auto;
+  border-radius: 7px;
+  margin-bottom: 17px;
+  filter: grayscale(1) brightness(0.5);
+  transition: 0.3s linear;
+}
+
+.gallery img:hover {
+  max-width: auto;
+  max-height: auto;
+  border-radius: 7px;
+  margin-bottom: 17px;
+  filter: grayscale(0) brightness(1);
+  transform: scale(1.03);
 }
 
 .roww {
@@ -826,8 +845,8 @@ a#hov_btn:hover {
 
 .rentals img {
   border-radius: 100%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 .rentals-banner {
@@ -1231,17 +1250,18 @@ a#hov_btn:hover {
 
 /*RESPONSIVE CSS*/
 @media only screen and (max-width: 768px) {
-  .roww .column img {
-    margin-top: 2%;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+  .gallery img {
+    max-width: auto;
+    max-height: auto;
+    border-radius: 7px;
+    margin-bottom: 17px;
     filter: none;
     transition: 0.3s linear;
   }
-  .roww .column img:hover {
+
+  .gallery img:hover {
     filter: none;
-    transform: scale(1.03);
+    transform: none;
   }
   .contact-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -1396,5 +1416,27 @@ a#hov_btn:hover {
     height: 40px;
     border-color: #1b5a41;
     margin-left: 100px;
+  }
+
+  .col-xs-12 {
+    margin-bottom: 20px;
+  }
+
+  .second-parallax {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.466),
+        rgba(0, 0, 0, 0.486)
+      ),
+      url(../img/img26.jpg);
+    /* height: 600px; */
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    background-attachment: fixed;
   }
 }

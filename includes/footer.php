@@ -2,7 +2,7 @@
 <footer class="footer">
   <div class="container">
     <div class="row p-3">
-      <a href="https://api.whatsapp.com/send?phone=233243545644" target="_blank" title="send us a whatsapp message"><i class="fa fa-whatsapp" id="whatsapp"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=233244179985" target="_blank" title="send us a whatsapp message"><i class="fa fa-whatsapp" id="whatsapp"></i></a>
       <div class="col-md-3 col-xs-3">
         <h2>Quick Links</h2>
         <div id="footer-line"></div>
@@ -15,8 +15,8 @@
       <div class="col-md-3 col-xs-3">
       <h2>Contact Us</h2>
       <div id="footer-line"></div>
-      <p>Papao Haatso Rd, Accra</p>
-      <a href="tel:+233244179985" style="color:inherit">+233244179985</a>
+      <p><i class="fa fa-map-marker"></i> Papao Haatso Rd, Accra</p>
+      <i class="fa fa-phone"></i> <a href="tel:+233244179985" style="color:inherit">+233244179985</a>
       </div>
       <div class="col-md-3 col-xs-3">
       <h2>Services</h2>
@@ -24,14 +24,16 @@
         <p>Rentals</p>
         <p>Consultancy</p>
         <p>Event Planning</p>
-        <p>Chairs</p>
+        <p>Ushering</p>
       </div>
       <daiv class="col-md-3 col-xs-3">
       <h2>We are Social</h2>
       <div id="footer-line"></div>
       <div class="mt-3">
-          <a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-instagram"></a><a href="#" class="fa fa-whatsapp"></a>
+          <a href="https://www.facebook.com/Infloservevents/" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/infloservevents/" class="fa fa-instagram"></a>
+          <!--<a href="#" class="fa fa-whatsapp"></a>-->
        </div> 
       </div>
     </div>
@@ -41,7 +43,7 @@
 <section class="social-copyright">
   <div class="container">
     <div class="row">
-      <div class="col-md-6"><p> © 2020 Copyright. All Rights Reserved.||Developed By IT Masters</p></div>
+      <div class="col-md-6"><p> © 2020 Copyright. All Rights Reserved.||Developed By <a href="https://itmastersgh.com" style="color:#abce4a">IT Masters</a></p></div>
        </div>
 
     </div>
@@ -73,7 +75,7 @@ owl.owlCarousel({
 			loop:true
         },
         1000:{
-            items:4,
+            items:3,
             nav:true,
             loop:true
         }}),
