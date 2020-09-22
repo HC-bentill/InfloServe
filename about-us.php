@@ -38,12 +38,12 @@ Call us!!!
 <hr>      
         <div class="row about-text about-img mt-5 pt-5 g-3">
           <div class="col-md-6 col-sm-12">
-            <br><br> <strong>Our Vision  :</strong>  Before and after your event; wedding, birthday, conference, family gathering among others.If you want to plan a beautiful event that will make headlines, then prioritise the experts on this list. 
-                  beneficiaries lack the 
-            <br><br> <strong>Our Values  :</strong> not simply a concept. It’s how we develop and maintain customer loyalty.
-            Innovation – it is the driving force behind 
-            <br><br> <strong>Our Passion  :</strong> to access a wider arts community, showcase their skills,
-                        advertise their services, and gain private 
+            <br><br> <strong>Our Vision  :</strong>  Before and after your event; wedding, birthday, conference, family gathering among others.
+            If you want to plan a beautiful event that will make headlines, then prioritise the experts on this list. 
+             
+            <br><br> <strong>Our Values  :</strong> Not simply a concept. It’s how we develop and maintain customer loyalty.
+            Innovation – it is the driving force behind us
+            <br><br> <strong>Our Passion  :</strong>To deiver reliable services and ensure trust with our clients
             
              </p>
         </div>
@@ -53,7 +53,7 @@ Call us!!!
           <div class="mt-3">
             <p>Social Media Platforms</p>
           <a href="https://www.facebook.com/Infloservevents/" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a>
-          <a href="https://www.instagram.com/Infloservevents/" class="fa fa-instagram"></a><a href="#" class="fa fa-whatsapp"></a>
+          <a href="https://www.instagram.com/Infloservevents/" class="fa fa-instagram"></a>
        </div>
     </div>
     </section>
@@ -67,7 +67,7 @@ Call us!!!
   <div class="row align-items-center justify-content-center g-3 img-row">
 
     <div class="col-md-6">
-      <p> The values we share are embodied in what goes on at Maintco from day to day. Team members must exhibit ethical and honest behavior, and Maintco 
+      <p> The values we share are embodied in what goes on at Infloservevents from day to day. Team members must exhibit ethical and honest behavior, and Maintco 
         must offer fair, equal conduct in a safe, healthy workplace. We believe that in such an environment, sound decision making and effective strategies flow naturally from the give-and-take of daily business engagements among all team members.</p>
       <ul class="w3-ul w3-card-4 m-2" style="width:90%">
         <li>Quality – exceptional quality delights our customers and is essential to customer growth and retention.</li>
